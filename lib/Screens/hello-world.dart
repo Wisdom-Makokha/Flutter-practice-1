@@ -25,7 +25,7 @@ class MyScaffold extends StatelessWidget{
           ElevatedButton(
             onPressed: (){
               Navigator.push(context, MaterialPageRoute(builder: (context)
-              => const TutorialHome()));
+              => const TutorialHome(), fullscreenDialog: true));
             },
             child: const Text('Tutorial home'),
           ),
