@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Screens/hello-world.dart';
+import 'Screens/hello_world.dart';
 
 void main() {
   runApp(
@@ -8,6 +8,7 @@ void main() {
       title: 'My app',
 
       theme: ThemeData(
+        colorScheme: const ColorScheme.light(brightness: Brightness.light),
         primarySwatch: Colors.blue,
       ),
       home: const SafeArea(

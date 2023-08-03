@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_creation/Screens/long_press_functionality.dart';
 
 class CounterDisplay extends StatelessWidget{
   const CounterDisplay({required this.count, super.key});
@@ -77,6 +78,13 @@ class CounterState extends State<Counter>{
           ]
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)
+          => const LongScreen()));
+        },
+        child: const Icon(Icons.arrow_circle_right),
+      )
     );
   }
 }

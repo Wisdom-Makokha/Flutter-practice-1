@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_creation/Screens/input-detection.dart';
+import 'package:my_creation/Screens/input_detection.dart';
 
 class TutorialHome extends StatelessWidget{
   const TutorialHome({super.key});

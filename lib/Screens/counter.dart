@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_creation/Screens/more-complexity.dart';
+import 'package:my_creation/Screens/more_complexity.dart';
 
 class CounterScreen extends StatefulWidget{
   const CounterScreen({super.key});
@@ -57,6 +57,7 @@ class CounterScreenState extends State<CounterScreen>{
                 FloatingActionButton.extended(
                   onPressed: (counter > 0) ? decrement : null,
                   backgroundColor: Colors.blueGrey,
+                  heroTag: null,
                   label: const Text('Subtract'),
                   icon: const Icon(Icons.remove),
                 ),
@@ -70,7 +71,7 @@ class CounterScreenState extends State<CounterScreen>{
                 Navigator.push(context, MaterialPageRoute(builder: (context)
                 => const Counter()));
               },
-              child: Text('Screen shift to Counter 2'),
+              child: const Text('Screen shift to Counter 2'),
             )
           ],
         ),

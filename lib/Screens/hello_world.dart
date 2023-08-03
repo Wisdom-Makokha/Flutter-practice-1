@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_creation/Screens/tutorial-home.dart';
+import 'package:my_creation/Screens/tutorial_home.dart';
 import '../Globals/appbar.dart';
 
 class MyScaffold extends StatelessWidget{
